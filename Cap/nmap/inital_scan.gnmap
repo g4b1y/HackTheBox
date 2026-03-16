@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Mon Mar 16 17:37:38 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -oA ./nmap/inital_scan 10.129.10.77
+Host: 10.129.10.77 ()	Status: Up
+Host: 10.129.10.77 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Gunicorn/, 4343/filtered/tcp//unicall///	Ignored State: closed (996)
+# Nmap done at Mon Mar 16 18:05:26 2026 -- 1 IP address (1 host up) scanned in 1668.70 seconds
