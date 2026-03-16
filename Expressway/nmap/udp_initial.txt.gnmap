@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Mon Mar 16 23:20:49 2026 as: /usr/lib/nmap/nmap -sU -Pn -oA nmap/udp_initial.txt 10.129.238.52
+Host: 10.129.238.52 ()	Status: Up
+Host: 10.129.238.52 ()	Ports: 68/open|filtered/udp//dhcpc///, 69/open|filtered/udp//tftp///, 500/open/udp//isakmp///, 4500/open|filtered/udp//nat-t-ike///	Ignored State: closed (996)
+# Nmap done at Mon Mar 16 23:39:35 2026 -- 1 IP address (1 host up) scanned in 1125.81 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.98 scan initiated Mon Mar 16 23:20:49 2026 as: /usr/lib/nmap/nmap -sU -Pn -oA nmap/udp_initial.txt 10.129.238.52
+Nmap scan report for 10.129.238.52
+Host is up (0.16s latency).
+Not shown: 996 closed udp ports (port-unreach)
+PORT     STATE         SERVICE
+68/udp   open|filtered dhcpc
+69/udp   open|filtered tftp
+500/udp  open          isakmp
+4500/udp open|filtered nat-t-ike
+
+# Nmap done at Mon Mar 16 23:39:35 2026 -- 1 IP address (1 host up) scanned in 1125.81 seconds
