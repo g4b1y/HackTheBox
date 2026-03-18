@@ -36,7 +36,7 @@ curl -s -L -A "Mozilla/5.0" https://www.hackthebox.com/machines | grep -oP '(?<=
 - [ ] Broker
 - [ ] Busqueda
 - [ ] CCTV
-- [ ] Cap
+- [x] Cap
 - [ ] Chemistry
 - [ ] Code
 - [ ] CodePartTwo
@@ -52,7 +52,7 @@ curl -s -L -A "Mozilla/5.0" https://www.hackthebox.com/machines | grep -oP '(?<=
 - [ ] Down
 - [ ] Editor
 - [ ] Editorial
-- [ ] Expressway
+- [x] Expressway
 - [ ] Facts
 - [ ] Forgotten
 - [ ] FriendZone
@@ -119,7 +119,7 @@ curl -s -L -A "Mozilla/5.0" https://www.hackthebox.com/machines | grep -oP '(?<=
 - [ ] TraceBack
 - [ ] Traverxec
 - [ ] Trick
-- [ ] TwoMillion
+- [x] TwoMillion
 - [ ] UnderPass
 - [ ] Usage
 - [ ] Valentine
@@ -415,7 +415,7 @@ curl -s -L -A "Mozilla/5.0" https://www.hackthebox.com/machines | grep -oP '(?<=
 - [ ] Access
 - [ ] Active
 - [ ] Arctic
-- [ ] Baby
+- [x] Baby
 - [ ] Bastion
 - [ ] Blue
 - [ ] Bounty

@@ -1,10 +1,10 @@
 # Baby - HackTheBox Writeup (Complete Replication Guide)
 
-**Date:** March 18, 2026
-**OS:** Windows Server 2022
-**IP Address:** 10.129.6.110 (baby.vl)
-**Hostname:** BabyDC.baby.vl
-**Difficulty:** Easy
+**Date:** March 18, 2026  
+**OS:** Windows Server 2022  
+**IP Address:** 10.129.6.110 (baby.vl)  
+**Hostname:** BabyDC.baby.vl  
+**Difficulty:** Easy  
 
 ---
 
