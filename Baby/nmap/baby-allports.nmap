@@ -1,0 +1,29 @@
+# Nmap 7.98 scan initiated Wed Mar 18 16:09:20 2026 as: /usr/lib/nmap/nmap --privileged -p- -v --min-rate=10000 -oA nmap/baby-allports 10.129.6.110
+Increasing send delay for 10.129.6.110 from 5 to 10 due to 11 out of 14 dropped probes since last increase.
+Nmap scan report for 10.129.6.110
+Host is up (0.30s latency).
+Not shown: 65515 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+88/tcp    open  kerberos-sec
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+389/tcp   open  ldap
+445/tcp   open  microsoft-ds
+464/tcp   open  kpasswd5
+593/tcp   open  http-rpc-epmap
+636/tcp   open  ldapssl
+3268/tcp  open  globalcatLDAP
+3269/tcp  open  globalcatLDAPssl
+3389/tcp  open  ms-wbt-server
+5985/tcp  open  wsman
+9389/tcp  open  adws
+49664/tcp open  unknown
+49668/tcp open  unknown
+57473/tcp open  unknown
+57474/tcp open  unknown
+57483/tcp open  unknown
+59447/tcp open  unknown
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Mar 18 16:10:16 2026 -- 1 IP address (1 host up) scanned in 56.77 seconds
