@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Wed Mar 18 12:21:34 2026 as: /usr/lib/nmap/nmap -sC -sV -p 22,80 -oA nmap/twomillion 10.129.229.66
+Host: 10.129.229.66 (2million.htb)	Status: Up
+Host: 10.129.229.66 (2million.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx/
+# Nmap done at Wed Mar 18 12:21:42 2026 -- 1 IP address (1 host up) scanned in 8.11 seconds

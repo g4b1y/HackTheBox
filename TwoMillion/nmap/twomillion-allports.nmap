@@ -1,0 +1,13 @@
+# Nmap 7.98 scan initiated Wed Mar 18 12:20:23 2026 as: /usr/lib/nmap/nmap --privileged -p- -v --min-rate=10000 -oA nmap/twomillion-allports 10.129.229.66
+Increasing send delay for 10.129.229.66 from 0 to 5 due to 699 out of 2329 dropped probes since last increase.
+Warning: 10.129.229.66 giving up on port because retransmission cap hit (10).
+Increasing send delay for 10.129.229.66 from 640 to 1000 due to 742 out of 2471 dropped probes since last increase.
+Nmap scan report for 2million.htb (10.129.229.66)
+Host is up (0.027s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/share/nmap
+# Nmap done at Wed Mar 18 12:20:47 2026 -- 1 IP address (1 host up) scanned in 24.26 seconds
