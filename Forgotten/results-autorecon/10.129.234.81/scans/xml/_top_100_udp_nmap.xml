@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Wed Mar 18 23:29:08 2026 as: /usr/lib/nmap/nmap -vv -&#45;reason -Pn -T4 -sU -A -&#45;top-ports 100 -oN /home/rf2i/Documents/HTB/Machines/Forgotten/results/10.129.234.81/scans/_top_100_udp_nmap.txt -oX /home/rf2i/Documents/HTB/Machines/Forgotten/results/10.129.234.81/scans/xml/_top_100_udp_nmap.xml 10.129.234.81 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -vv -&#45;reason -Pn -T4 -sU -A -&#45;top-ports 100 -oN /home/rf2i/Documents/HTB/Machines/Forgotten/results/10.129.234.81/scans/_top_100_udp_nmap.txt -oX /home/rf2i/Documents/HTB/Machines/Forgotten/results/10.129.234.81/scans/xml/_top_100_udp_nmap.xml 10.129.234.81" start="1773872948" startstr="Wed Mar 18 23:29:08 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="100" services="7,9,17,19,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,427,443,445,497,500,514-515,518,520,593,623,626,631,996-999,1022-1023,1025-1030,1433-1434,1645-1646,1701,1718-1719,1812-1813,1900,2000,2048-2049,2222-2223,3283,3456,3703,4444,4500,5000,5060,5353,5632,9200,10000,17185,20031,30718,31337,32768-32769,32771,32815,33281,49152-49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201,65024"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1773872949"/>
+<taskend task="NSE" time="1773872949"/>
+<taskbegin task="NSE" time="1773872949"/>
+<taskend task="NSE" time="1773872949"/>
+<taskbegin task="NSE" time="1773872949"/>
+<taskend task="NSE" time="1773872949"/>
+<taskbegin task="UDP Scan" time="1773872949"/>
+<taskend task="UDP Scan" time="1773873048" extrainfo="100 total ports"/>
+<taskbegin task="Service scan" time="1773873048"/>
+<taskprogress task="Service scan" time="1773873105" percent="8.33" remaining="628" etc="1773873732"/>
+<taskend task="Service scan" time="1773873145" extrainfo="12 services on 1 host"/>
+<taskbegin task="Traceroute" time="1773873151"/>
+<taskend task="Traceroute" time="1773873152"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1773873152"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1773873152"/>
+<taskbegin task="NSE" time="1773873152"/>
+<taskend task="NSE" time="1773873174"/>
+<taskbegin task="NSE" time="1773873174"/>
+<taskend task="NSE" time="1773873175"/>
+<taskbegin task="NSE" time="1773873175"/>
+<taskend task="NSE" time="1773873175"/>
+<host starttime="1773872949" endtime="1773873175"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.129.234.81" addrtype="ipv4"/>
+<hostnames>
+<hostname name="forgotten.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="88">
+<extrareasons reason="port-unreach" count="88" proto="udp" ports="9,17,19,49,53,69,80,88,111,120,123,135-139,158,162,177,427,443,445,500,514-515,520,623,626,631,996-999,1022-1023,1025-1030,1433-1434,1645-1646,1701,1719,1812-1813,1900,2000,2048-2049,2223,3283,3456,3703,4444,4500,5000,5060,5353,5632,9200,10000,17185,20031,30718,31337,32768,32815,33281,49152,49154,49156,49181-49182,49185-49186,49188,49190-49194,49200-49201,65024"/>
+</extraports>
+<port protocol="udp" portid="7"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="echo" method="table" conf="3"/></port>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="68"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="161"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="497"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="retrospect" method="table" conf="3"/></port>
+<port protocol="udp" portid="518"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ntalk" method="table" conf="3"/></port>
+<port protocol="udp" portid="593"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="http-rpc-epmap" method="table" conf="3"/></port>
+<port protocol="udp" portid="1718"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="h225gatedisc" method="table" conf="3"/></port>
+<port protocol="udp" portid="2222"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="msantipiracy" method="table" conf="3"/></port>
+<port protocol="udp" portid="32769"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="filenet-rpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="32771"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="sometimes-rpc6" method="table" conf="3"/></port>
+<port protocol="udp" portid="49153"><state state="open|filtered" reason="no-response" reason_ttl="0"/></port>
+</ports>
+<os><portused state="closed" proto="udp" portid="9"/>
+<osfingerprint fingerprint="SCAN(V=7.98%E=4%D=3/18%OT=%CT=%CU=9%PV=Y%DS=2%DC=T%G=N%TM=69BB2817%P=x86_64-pc-linux-gnu)&#xa;SEQ(CI=Z%II=I)&#xa;T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)&#xa;T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)&#xa;IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+</os>
+<distance value="2"/>
+<trace port="999" proto="udp">
+<hop ttl="1" ipaddr="10.10.14.1" rtt="55.45"/>
+<hop ttl="2" ipaddr="10.129.234.81" rtt="55.56" host="forgotten.htb"/>
+</trace>
+<times srtt="72139" rttvar="74911" to="371783"/>
+</host>
+<taskbegin task="NSE" time="1773873175"/>
+<taskend task="NSE" time="1773873175"/>
+<taskbegin task="NSE" time="1773873175"/>
+<taskend task="NSE" time="1773873175"/>
+<taskbegin task="NSE" time="1773873175"/>
+<taskend task="NSE" time="1773873175"/>
+<runstats><finished time="1773873175" timestr="Wed Mar 18 23:32:55 2026" summary="Nmap done at Wed Mar 18 23:32:55 2026; 1 IP address (1 host up) scanned in 226.39 seconds" elapsed="226.39" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

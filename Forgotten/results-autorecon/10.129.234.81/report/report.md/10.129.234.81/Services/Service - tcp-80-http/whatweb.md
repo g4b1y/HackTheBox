@@ -1,0 +1,46 @@
+```bash
+whatweb --color=never --no-errors -a 3 -v http://10.129.234.81:80 2>&1
+```
+
+[/home/rf2i/Documents/HTB/Machines/Forgotten/results/10.129.234.81/scans/tcp80/tcp_80_http_whatweb.txt](file:///home/rf2i/Documents/HTB/Machines/Forgotten/results/10.129.234.81/scans/tcp80/tcp_80_http_whatweb.txt):
+
+```
+WhatWeb report for http://10.129.234.81:80
+Status    : 403 Forbidden
+Title     : 403 Forbidden
+IP        : 10.129.234.81
+Country   : RESERVED, ZZ
+
+Summary   : Apache[2.4.56], HTTPServer[Debian Linux][Apache/2.4.56 (Debian)]
+
+Detected Plugins:
+[ Apache ]
+	The Apache HTTP Server Project is an effort to develop and
+	maintain an open-source HTTP server for modern operating
+	systems including UNIX and Windows NT. The goal of this
+	project is to provide a secure, efficient and extensible
+	server that provides HTTP services in sync with the current
+	HTTP standards.
+
+	Version      : 2.4.56 (from HTTP Server Header)
+	Google Dorks: (3)
+	Website     : http://httpd.apache.org/
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to
+	identify the operating system from the server header.
+
+	OS           : Debian Linux
+	String       : Apache/2.4.56 (Debian) (from server string)
+
+HTTP Headers:
+	HTTP/1.1 403 Forbidden
+	Date: Wed, 18 Mar 2026 22:29:27 GMT
+	Server: Apache/2.4.56 (Debian)
+	Content-Length: 278
+	Connection: close
+	Content-Type: text/html; charset=iso-8859-1
+
+
+
+```

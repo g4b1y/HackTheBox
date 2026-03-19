@@ -1,0 +1,41 @@
+# Nmap 7.98 scan initiated Wed Mar 18 23:29:08 2026 as: /usr/lib/nmap/nmap -vv --reason -Pn -T4 -sU -A --top-ports 100 -oN /home/rf2i/Documents/HTB/Machines/Forgotten/results/10.129.234.81/scans/_top_100_udp_nmap.txt -oX /home/rf2i/Documents/HTB/Machines/Forgotten/results/10.129.234.81/scans/xml/_top_100_udp_nmap.xml 10.129.234.81
+Warning: 10.129.234.81 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.129.234.81 from 100 to 200 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.129.234.81 from 200 to 400 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.129.234.81 from 400 to 800 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for forgotten.htb (10.129.234.81)
+Host is up, received user-set (0.072s latency).
+Scanned at 2026-03-18 23:29:09 CET for 226s
+Not shown: 88 closed udp ports (port-unreach)
+PORT      STATE         SERVICE        REASON      VERSION
+7/udp     open|filtered echo           no-response
+67/udp    open|filtered dhcps          no-response
+68/udp    open|filtered dhcpc          no-response
+161/udp   open|filtered snmp           no-response
+497/udp   open|filtered retrospect     no-response
+518/udp   open|filtered ntalk          no-response
+593/udp   open|filtered http-rpc-epmap no-response
+1718/udp  open|filtered h225gatedisc   no-response
+2222/udp  open|filtered msantipiracy   no-response
+32769/udp open|filtered filenet-rpc    no-response
+32771/udp open|filtered sometimes-rpc6 no-response
+49153/udp open|filtered unknown        no-response
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.98%E=4%D=3/18%OT=%CT=%CU=9%PV=Y%DS=2%DC=T%G=N%TM=69BB2817%P=x86_64-pc-linux-gnu)
+SEQ(CI=Z%II=I)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+
+TRACEROUTE (using port 999/udp)
+HOP RTT      ADDRESS
+1   55.45 ms 10.10.14.1
+2   55.56 ms forgotten.htb (10.129.234.81)
+
+Read data files from: /usr/share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 18 23:32:55 2026 -- 1 IP address (1 host up) scanned in 226.39 seconds
