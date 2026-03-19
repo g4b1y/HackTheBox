@@ -1,0 +1,388 @@
+Configuration {
+    kind: "configuration",
+    wordlist: "/usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt",
+    config: "/etc/feroxbuster/ferox-config.toml",
+    proxy: "",
+    replay_proxy: "",
+    server_certs: [],
+    client_cert: "",
+    client_key: "",
+    target_url: "http://safe.htb/",
+    status_codes: [
+        100,
+        101,
+        102,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        226,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        307,
+        308,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        421,
+        422,
+        423,
+        424,
+        426,
+        428,
+        429,
+        431,
+        451,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        510,
+        511,
+        103,
+        425,
+    ],
+    replay_codes: [
+        100,
+        101,
+        102,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        226,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        307,
+        308,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        421,
+        422,
+        423,
+        424,
+        426,
+        428,
+        429,
+        431,
+        451,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        510,
+        511,
+        103,
+        425,
+    ],
+    filter_status: [],
+    client: Client {
+        accepts: Accepts,
+        proxies: [
+            Matcher,
+        ],
+        redirect_policy: "Policy(None)",
+        referer: true,
+        default_headers: {
+            "accept": "*/*",
+            "user-agent": "feroxbuster/2.13.1",
+        },
+        reqwest::config::RequestTimeout: 7s,
+    },
+    replay_client: None,
+    threads: 50,
+    timeout: 7,
+    verbosity: 0,
+    silent: false,
+    quiet: false,
+    output_level: Default,
+    auto_bail: false,
+    auto_tune: false,
+    requester_policy: Default,
+    json: false,
+    output: "safe-ferox.json",
+    debug_log: "",
+    user_agent: "feroxbuster/2.13.1",
+    random_agent: false,
+    redirects: false,
+    insecure: false,
+    extensions: [],
+    methods: [
+        "GET",
+    ],
+    data: [],
+    headers: {},
+    queries: [],
+    no_recursion: false,
+    extract_links: true,
+    add_slash: false,
+    stdin: false,
+    cached_stdin: [],
+    depth: 4,
+    scan_limit: 0,
+    parallel: 0,
+    rate_limit: 0,
+    filter_size: [],
+    filter_line_count: [],
+    filter_word_count: [],
+    filter_regex: [],
+    dont_filter: false,
+    resumed: false,
+    resume_from: "",
+    save_state: true,
+    time_limit: "",
+    filter_similar: [],
+    url_denylist: [],
+    regex_denylist: [],
+    scope: [
+        Url {
+            scheme: "http",
+            cannot_be_a_base: false,
+            username: "",
+            password: None,
+            host: Some(
+                Domain(
+                    "safe.htb",
+                ),
+            ),
+            port: None,
+            path: "/",
+            query: None,
+            fragment: None,
+        },
+    ],
+    collect_extensions: false,
+    dont_collect: [
+        "woff2",
+        "woff",
+        "ttf",
+        "otf",
+        "eot",
+        "tif",
+        "tiff",
+        "ico",
+        "cur",
+        "bmp",
+        "webp",
+        "svg",
+        "png",
+        "jpg",
+        "jpeg",
+        "jfif",
+        "gif",
+        "avif",
+        "apng",
+        "pjpeg",
+        "pjp",
+        "mov",
+        "wav",
+        "mpg",
+        "mpeg",
+        "mp3",
+        "mp4",
+        "m4a",
+        "m4p",
+        "m4v",
+        "ogg",
+        "webm",
+        "ogv",
+        "oga",
+        "flac",
+        "aac",
+        "3gp",
+        "css",
+        "zip",
+        "xls",
+        "xml",
+        "gz",
+        "tgz",
+    ],
+    collect_backups: false,
+    backup_extensions: [
+        "~",
+        ".bak",
+        ".bak2",
+        ".old",
+        ".1",
+    ],
+    collect_words: false,
+    force_recursion: false,
+    update_app: false,
+    scan_dir_listings: false,
+    request_file: "",
+    protocol: "https",
+    limit_bars: 0,
+    unique: false,
+    response_size_limit: 4194304,
+}
+200      GET       24l      127w    10353c http://safe.htb/icons/openlogo-75.png
+200      GET      370l      948w    10787c http://safe.htb/
+301      GET        9l       28w      305c http://safe.htb/manual => http://safe.htb/manual/
+301      GET        9l       28w      312c http://safe.htb/manual/images => http://safe.htb/manual/images/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://safe.htb/manual/images (Apache)
+301      GET        9l       28w      308c http://safe.htb/manual/en => http://safe.htb/manual/en/
+200      GET        1l        6w       84c http://safe.htb/manual/images/up.gif
+200      GET        6l       29w     2168c http://safe.htb/manual/images/ssl_intro_fig2.png
+200      GET        1l        5w       87c http://safe.htb/manual/images/right.gif
+200      GET       15l       63w     7395c http://safe.htb/manual/images/ssl_intro_fig3.gif
+200      GET        6l       58w     2303c http://safe.htb/manual/images/home.gif
+200      GET       23l      143w     7050c http://safe.htb/manual/images/apache_header.gif
+200      GET        9l       44w     5193c http://safe.htb/manual/images/ssl_intro_fig2.gif
+200      GET       25l       72w     4606c http://safe.htb/manual/images/ssl_intro_fig3.png
+200      GET       55l      246w    21064c http://safe.htb/manual/images/reverse-proxy-arch.png
+200      GET        2l        4w       79c http://safe.htb/manual/images/pixel.gif
+200      GET        1l        6w       86c http://safe.htb/manual/images/left.gif
+200      GET       10l       66w     4328c http://safe.htb/manual/images/filter_arch.png
+200      GET       12l       56w     4382c http://safe.htb/manual/images/mod_filter_new.gif
+200      GET       10l       34w     2420c http://safe.htb/manual/images/mod_rewrite_fig2.png
+200      GET        8l       29w     2343c http://safe.htb/manual/images/mod_filter_new.tr.png
+200      GET        3l       12w     1200c http://safe.htb/manual/images/mod_filter_old.png
+200      GET        1l        5w       84c http://safe.htb/manual/images/down.gif
+200      GET        3l       37w     2249c http://safe.htb/manual/images/mod_filter_old.gif
+200      GET        3l       26w     3083c http://safe.htb/manual/images/mod_rewrite_fig1.png
+200      GET       16l       74w     5983c http://safe.htb/manual/images/ssl_intro_fig1.png
+200      GET        1l        7w     2908c http://safe.htb/manual/images/favicon.ico
+200      GET       14l       54w     2412c http://safe.htb/manual/images/index.gif
+200      GET        8l       24w     1868c http://safe.htb/manual/images/mod_filter_new.png
+200      GET       18l      118w     6536c http://safe.htb/manual/images/feather.gif
+200      GET       25l       87w     6358c http://safe.htb/manual/images/mod_rewrite_fig1.gif
+200      GET       68l      318w    10209c http://safe.htb/manual/images/sub.gif
+200      GET       11l       49w     4550c http://safe.htb/manual/images/filter_arch.tr.png
+200      GET       21l      138w    10974c http://safe.htb/manual/images/feather.png
+200      GET       26l      111w    10616c http://safe.htb/manual/images/ssl_intro_fig1.gif
+200      GET       17l       63w     4627c http://safe.htb/manual/images/mod_rewrite_fig2.gif
+301      GET        9l       28w      308c http://safe.htb/manual/de => http://safe.htb/manual/de/
+200      GET       70l      299w    21207c http://safe.htb/manual/images/caching_fig1.tr.png
+301      GET        9l       28w      308c http://safe.htb/manual/fr => http://safe.htb/manual/fr/
+200      GET       77l      325w    24698c http://safe.htb/manual/images/caching_fig1.png
+200      GET       50l      355w    31098c http://safe.htb/manual/images/custom_errordocs.png
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://safe.htb/manual/style (Apache)
+301      GET        9l       28w      311c http://safe.htb/manual/style => http://safe.htb/manual/style/
+301      GET        9l       28w      308c http://safe.htb/manual/es => http://safe.htb/manual/es/
+200      GET      105l      493w    29291c http://safe.htb/manual/images/caching_fig1.gif
+200      GET      119l      848w    66818c http://safe.htb/manual/images/rewrite_backreferences.png
+200      GET       10l       51w     3377c http://safe.htb/manual/style/common.dtd.gz
+200      GET       29l      147w     1082c http://safe.htb/manual/style/manualpage.dtd
+200      GET       42l      190w     1425c http://safe.htb/manual/style/sitemap.dtd
+200      GET       24l      127w      907c http://safe.htb/manual/style/lang.dtd
+200      GET       24l      130w      925c http://safe.htb/manual/style/version.ent
+200      GET       36l      165w     1247c http://safe.htb/manual/style/faq.dtd
+200      GET       77l      273w     2246c http://safe.htb/manual/style/modulesynopsis.dtd
+200      GET       27l       66w      481c http://safe.htb/manual/style/build.properties
+200      GET      173l     1008w    81048c http://safe.htb/manual/images/syntax_rewritecond.png
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://safe.htb/manual/style/latex (Apache)
+200      GET      146l      919w    71900c http://safe.htb/manual/images/build_a_mod_4.png
+200      GET      144l      873w    71685c http://safe.htb/manual/images/rewrite_rule_flow.png
+200      GET      158l     1179w    92140c http://safe.htb/manual/images/build_a_mod_3.png
+301      GET        9l       28w      313c http://safe.htb/manual/en/misc => http://safe.htb/manual/en/misc/
+301      GET        9l       28w      313c http://safe.htb/manual/de/misc => http://safe.htb/manual/de/misc/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://safe.htb/manual/style/scripts (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://safe.htb/manual/style/css (Apache)
+200      GET      232l     1134w    97231c http://safe.htb/manual/images/syntax_rewriterule.png
+200      GET      299l     1691w   134287c http://safe.htb/manual/images/build_a_mod_2.png
+200      GET      318l     1738w   143627c http://safe.htb/manual/images/rewrite_process_uri.png
+301      GET        9l       28w      313c http://safe.htb/manual/es/misc => http://safe.htb/manual/es/misc/
+200      GET      234l     1425w   321860c http://safe.htb/manual/images/bal-man-b.png
+200      GET      252l     1614w   255941c http://safe.htb/manual/images/bal-man.png
+200      GET      357l     1989w   374905c http://safe.htb/manual/images/bal-man-w.png
+301      GET        9l       28w      313c http://safe.htb/manual/fr/misc => http://safe.htb/manual/fr/misc/
+200      GET        5l       21w      167c http://safe.htb/manual/style/scripts/MINIFY
+200      GET       27l      146w      915c http://safe.htb/manual/style/css/manual-chm.css
+200      GET       24l      141w      874c http://safe.htb/manual/style/css/manual-zip.css
+301      GET        9l       28w      308c http://safe.htb/manual/tr => http://safe.htb/manual/tr/
+200      GET     1031l     2269w    18754c http://safe.htb/manual/style/css/manual.css
+301      GET        9l       28w      308c http://safe.htb/manual/ko => http://safe.htb/manual/ko/
+301      GET        9l       28w      312c http://safe.htb/manual/es/faq => http://safe.htb/manual/es/faq/
+301      GET        9l       28w      308c http://safe.htb/manual/da => http://safe.htb/manual/da/
+301      GET        9l       28w      312c http://safe.htb/manual/en/ssl => http://safe.htb/manual/en/ssl/
+301      GET        9l       28w      312c http://safe.htb/manual/de/faq => http://safe.htb/manual/de/faq/
+301      GET        9l       28w      312c http://safe.htb/manual/fr/faq => http://safe.htb/manual/fr/faq/
+301      GET        9l       28w      312c http://safe.htb/manual/en/faq => http://safe.htb/manual/en/faq/
+301      GET        9l       28w      312c http://safe.htb/manual/fr/mod => http://safe.htb/manual/fr/mod/
+301      GET        9l       28w      312c http://safe.htb/manual/tr/ssl => http://safe.htb/manual/tr/ssl/
+301      GET        9l       28w      312c http://safe.htb/manual/tr/mod => http://safe.htb/manual/tr/mod/
+301      GET        9l       28w      313c http://safe.htb/manual/da/misc => http://safe.htb/manual/da/misc/
+301      GET        9l       28w      312c http://safe.htb/manual/de/mod => http://safe.htb/manual/de/mod/
+301      GET        9l       28w      317c http://safe.htb/manual/fr/programs => http://safe.htb/manual/fr/programs/
+301      GET        9l       28w      312c http://safe.htb/manual/da/faq => http://safe.htb/manual/da/faq/
+301      GET        9l       28w      317c http://safe.htb/manual/en/programs => http://safe.htb/manual/en/programs/
+301      GET        9l       28w      317c http://safe.htb/manual/es/programs => http://safe.htb/manual/es/programs/
+301      GET        9l       28w      312c http://safe.htb/manual/da/ssl => http://safe.htb/manual/da/ssl/
+301      GET        9l       28w      317c http://safe.htb/manual/de/programs => http://safe.htb/manual/de/programs/
+301      GET        9l       28w      312c http://safe.htb/manual/da/mod => http://safe.htb/manual/da/mod/
+301      GET        9l       28w      317c http://safe.htb/manual/tr/programs => http://safe.htb/manual/tr/programs/
+301      GET        9l       28w      312c http://safe.htb/manual/tr/faq => http://safe.htb/manual/tr/faq/
+301      GET        9l       28w      312c http://safe.htb/manual/ko/ssl => http://safe.htb/manual/ko/ssl/
+301      GET        9l       28w      312c http://safe.htb/manual/ko/faq => http://safe.htb/manual/ko/faq/
+404      GET        9l       33w      300c http://safe.htb/manual/es/faq/external%20files
+404      GET        9l       33w      300c http://safe.htb/manual/da/mod/external%20files
+301      GET        9l       28w      312c http://safe.htb/manual/ko/mod => http://safe.htb/manual/ko/mod/
+404      GET        9l       33w      298c http://safe.htb/manual/de/faq/Reports%20List
+404      GET        9l       33w      300c http://safe.htb/manual/en/faq/external%20files
+301      GET        9l       28w      314c http://safe.htb/manual/de/howto => http://safe.htb/manual/de/howto/
+301      GET        9l       28w      318c http://safe.htb/manual/en/developer => http://safe.htb/manual/en/developer/
+301      GET        9l       28w      318c http://safe.htb/manual/fr/developer => http://safe.htb/manual/fr/developer/
+301      GET        9l       28w      317c http://safe.htb/manual/ko/programs => http://safe.htb/manual/ko/programs/
+301      GET        9l       28w      311c http://safe.htb/manual/pt-br => http://safe.htb/manual/pt-br/
+404      GET        9l       33w      300c http://safe.htb/manual/tr/ssl/Web%20References
