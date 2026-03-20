@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Thu Mar 19 21:03:28 2026 as: /usr/lib/nmap/nmap -&#45;privileged -p- -T4 -oA /home/rf2i/Documents/HTB/Machines/Jerry/nmap/full 10.129.7.7 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -p- -T4 -oA /home/rf2i/Documents/HTB/Machines/Jerry/nmap/full 10.129.7.7" start="1773950608" startstr="Thu Mar 19 21:03:28 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.7.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1773950609" endtime="1773951365"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.129.7.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-response" count="65534" proto="tcp" ports="1-8079,8081-65535"/>
+</extraports>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="28092" rttvar="2360" to="100000"/>
+</host>
+<runstats><finished time="1773951365" timestr="Thu Mar 19 21:16:05 2026" summary="Nmap done at Thu Mar 19 21:16:05 2026; 1 IP address (1 host up) scanned in 757.11 seconds" elapsed="757.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

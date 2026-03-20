@@ -1,0 +1,14 @@
+# Nmap 7.98 scan initiated Thu Mar 19 23:10:30 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -oA /home/rf2i/Documents/HTB/Machines/CCTV/scans/cctv_initial_revised 10.129.7.12
+Nmap scan report for cctv.htb (10.129.7.12)
+Host is up (0.028s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|_  256 76:1d:73:98:fa:05:f7:0b:04:c2:3b:c4:7d:e6:db:4a (ECDSA)
+80/tcp open  http    Apache httpd 2.4.58
+|_http-title: SecureVision CCTV & Security Solutions
+Service Info: Host: default; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar 19 23:11:21 2026 -- 1 IP address (1 host up) scanned in 50.60 seconds

@@ -1,10 +1,10 @@
 # Forgotten - HackTheBox Writeup
 
-**Date:** 2026-03-19
-**OS:** Linux
-**IP Address:** 10.129.234.81
-**Difficulty:** Medium
-**Points:** 30
+**Date:** 2026-03-19  
+**OS:** Linux  
+**IP Address:** 10.129.234.81  
+**Difficulty:** Medium  
+**Points:** 30  
 
 ---
 

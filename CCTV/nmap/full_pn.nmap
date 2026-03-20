@@ -1,0 +1,10 @@
+# Nmap 7.98 scan initiated Thu Mar 19 21:22:40 2026 as: /usr/lib/nmap/nmap --privileged -p- -Pn -T4 -oA /home/rf2i/Documents/HTB/Machines/CCTV/nmap/full_pn 10.129.7.12
+Warning: 10.129.7.12 giving up on port because retransmission cap hit (6).
+Nmap scan report for 10.129.7.12
+Host is up (0.037s latency).
+Not shown: 65429 closed tcp ports (reset), 104 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Thu Mar 19 21:38:23 2026 -- 1 IP address (1 host up) scanned in 942.56 seconds

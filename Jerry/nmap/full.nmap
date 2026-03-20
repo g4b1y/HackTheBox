@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Thu Mar 19 21:03:28 2026 as: /usr/lib/nmap/nmap --privileged -p- -T4 -oA /home/rf2i/Documents/HTB/Machines/Jerry/nmap/full 10.129.7.7
+Nmap scan report for 10.129.7.7
+Host is up (0.028s latency).
+Not shown: 65534 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+8080/tcp open  http-proxy
+
+# Nmap done at Thu Mar 19 21:16:05 2026 -- 1 IP address (1 host up) scanned in 757.11 seconds

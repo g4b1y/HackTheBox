@@ -1,0 +1,5 @@
+set context persistent nowriters
+add volume c: alias temp
+create
+expose %temp% z:
+

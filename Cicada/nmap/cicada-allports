@@ -1,0 +1,12 @@
+# Nmap 7.98 scan initiated Thu Mar 19 17:03:55 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=10000 -oN nmap/cicada-allports 10.129.231.149
+Nmap scan report for 10.129.231.149
+Host is up (0.38s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+53/tcp    open  domain
+389/tcp   open  ldap
+636/tcp   open  ldapssl
+3269/tcp  open  globalcatLDAPssl
+64840/tcp open  unknown
+
+# Nmap done at Thu Mar 19 17:04:19 2026 -- 1 IP address (1 host up) scanned in 23.69 seconds

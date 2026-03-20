@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Thu Mar 19 21:03:28 2026 as: /usr/lib/nmap/nmap --privileged -p- -T4 -oA /home/rf2i/Documents/HTB/Machines/Jerry/nmap/full 10.129.7.7
+Host: 10.129.7.7 ()	Status: Up
+Host: 10.129.7.7 ()	Ports: 8080/open/tcp//http-proxy///	Ignored State: filtered (65534)
+# Nmap done at Thu Mar 19 21:16:05 2026 -- 1 IP address (1 host up) scanned in 757.11 seconds

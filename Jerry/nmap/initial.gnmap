@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Thu Mar 19 21:03:02 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -oA /home/rf2i/Documents/HTB/Machines/Jerry/nmap/initial 10.129.7.7
+Host: 10.129.7.7 ()	Status: Up
+Host: 10.129.7.7 ()	Ports: 8080/open/tcp//http//Apache Tomcat|Coyote JSP engine 1.1/	Ignored State: filtered (999)
+# Nmap done at Thu Mar 19 21:03:21 2026 -- 1 IP address (1 host up) scanned in 19.65 seconds

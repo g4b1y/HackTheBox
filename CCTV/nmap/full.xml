@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Thu Mar 19 21:21:45 2026 as: /usr/lib/nmap/nmap -&#45;privileged -p- -T4 -oA /home/rf2i/Documents/HTB/Machines/CCTV/nmap/full 10.129.7.12 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -p- -T4 -oA /home/rf2i/Documents/HTB/Machines/CCTV/nmap/full 10.129.7.12" start="1773951705" startstr="Thu Mar 19 21:21:45 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<runstats><finished time="1773951707" timestr="Thu Mar 19 21:21:47 2026" summary="Nmap done at Thu Mar 19 21:21:47 2026; 1 IP address (0 hosts up) scanned in 2.13 seconds" elapsed="2.13" exit="success"/><hosts up="0" down="1" total="1"/>
+</runstats>
+</nmaprun>

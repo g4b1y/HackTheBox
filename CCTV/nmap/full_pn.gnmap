@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Thu Mar 19 21:22:40 2026 as: /usr/lib/nmap/nmap --privileged -p- -Pn -T4 -oA /home/rf2i/Documents/HTB/Machines/CCTV/nmap/full_pn 10.129.7.12
+Host: 10.129.7.12 ()	Status: Up
+Host: 10.129.7.12 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///
+# Nmap done at Thu Mar 19 21:38:23 2026 -- 1 IP address (1 host up) scanned in 942.56 seconds

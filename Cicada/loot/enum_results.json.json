@@ -1,0 +1,127 @@
+{
+    "target": {
+        "host": "10.129.231.149"
+    },
+    "credentials": {
+        "auth_method": "null",
+        "user": "",
+        "password": "",
+        "domain": "",
+        "ticket_file": "",
+        "nthash": "",
+        "random_user": "dyqhrcuh"
+    },
+    "listeners": {
+        "LDAP": {
+            "port": 389,
+            "accessible": true
+        },
+        "LDAPS": {
+            "port": 636,
+            "accessible": true
+        },
+        "SMB": {
+            "port": 445,
+            "accessible": true
+        },
+        "SMB over NetBIOS": {
+            "port": 139,
+            "accessible": true
+        }
+    },
+    "is_parent_dc": true,
+    "is_child_dc": false,
+    "long_domain": "cicada.htb",
+    "domain": null,
+    "nmblookup": null,
+    "smb_dialects": {
+        "Supported dialects": {
+            "SMB 1.0": false,
+            "SMB 2.0.2": true,
+            "SMB 2.1": true,
+            "SMB 3.0": true,
+            "SMB 3.1.1": true
+        },
+        "Preferred dialect": "SMB 3.0",
+        "SMB1 only": false,
+        "SMB signing required": true
+    },
+    "smb_domain_info": {
+        "NetBIOS computer name": "CICADA-DC",
+        "NetBIOS domain name": "CICADA",
+        "DNS domain": "cicada.htb",
+        "FQDN": "CICADA-DC.cicada.htb",
+        "Derived membership": "domain member",
+        "Derived domain": "CICADA"
+    },
+    "sessions": {
+        "sessions_possible": true,
+        "null": true,
+        "password": false,
+        "Kerberos": false,
+        "NTLM": false,
+        "guest": true
+    },
+    "rpc_domain_info": {
+        "Domain": "CICADA",
+        "Domain SID": "S-1-5-21-917908876-1423158569-3159038727",
+        "Membership": "domain member"
+    },
+    "os_info": {
+        "OS": "Windows 10, Windows Server 2019, Windows Server 2016",
+        "OS version": "10.0",
+        "OS release": "",
+        "OS build": "20348",
+        "Native OS": "not supported",
+        "Native LAN manager": "not supported",
+        "Platform id": null,
+        "Server type": null,
+        "Server type string": null
+    },
+    "users": null,
+    "groups": null,
+    "shares": {},
+    "policy": null,
+    "printers": null,
+    "errors": {
+        "nmblookup": {
+            "enum_netbios": [
+                "Could not get NetBIOS names information via 'nmblookup': timed out"
+            ]
+        },
+        "domain": {
+            "enum_netbios": [
+                "Could not get NetBIOS names information via 'nmblookup': timed out"
+            ]
+        },
+        "os_info": {
+            "enum_os_info": [
+                "Could not get OS info via 'srvinfo': STATUS_ACCESS_DENIED"
+            ]
+        },
+        "users": {
+            "enum_users_rpc": [
+                "Could not find users via 'querydispinfo': STATUS_ACCESS_DENIED",
+                "Could not find users via 'enumdomusers': STATUS_ACCESS_DENIED"
+            ]
+        },
+        "groups": {
+            "enum_groups_rpc": [
+                "Could not get groups via 'enumalsgroups domain': STATUS_ACCESS_DENIED",
+                "Could not get groups via 'enumalsgroups builtin': STATUS_ACCESS_DENIED",
+                "Could not get groups via 'enumdomgroups': STATUS_ACCESS_DENIED"
+            ]
+        },
+        "policy": {
+            "enum_policy": [
+                "SMB connection error on port 445/tcp: STATUS_ACCESS_DENIED",
+                "SMB connection error on port 139/tcp: session failed"
+            ]
+        },
+        "printers": {
+            "enum_printers": [
+                "Could not get printer info via 'enumprinters': STATUS_ACCESS_DENIED"
+            ]
+        }
+    }
+}

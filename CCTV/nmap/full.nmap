@@ -1,0 +1,2 @@
+# Nmap 7.98 scan initiated Thu Mar 19 21:21:45 2026 as: /usr/lib/nmap/nmap --privileged -p- -T4 -oA /home/rf2i/Documents/HTB/Machines/CCTV/nmap/full 10.129.7.12
+# Nmap done at Thu Mar 19 21:21:47 2026 -- 1 IP address (0 hosts up) scanned in 2.13 seconds
