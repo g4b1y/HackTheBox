@@ -1,0 +1,2369 @@
+# Nmap 7.98 scan initiated Fri Mar 20 20:49:51 2026 as: /usr/lib/nmap/nmap -vv --reason -Pn -T4 -sV -p 80 "--script=banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN /home/rf2i/Documents/HTB/Machines/WingData/results/10.129.7.69/scans/tcp80/tcp_80_http_nmap.txt -oX /home/rf2i/Documents/HTB/Machines/WingData/results/10.129.7.69/scans/tcp80/xml/tcp_80_http_nmap.xml 10.129.7.69
+Nmap scan report for wingdata.htb (10.129.7.69)
+Host is up, received user-set (0.022s latency).
+Scanned at 2026-03-20 20:49:52 CET for 189s
+
+Bug in http-security-headers: no string output.
+PORT   STATE SERVICE REASON         VERSION
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.66
+|_http-server-header: Apache/2.4.66 (Debian)
+|_http-devframework: Couldn't determine the underlying framework or CMS. Try increasing 'httpspider.maxpagecount' value to spider more pages.
+|_http-litespeed-sourcecode-download: Request with null byte did not work. This web server might not be vulnerable
+|_http-referer-checker: Couldn't find any cross-domain scripts.
+|_http-date: Fri, 20 Mar 2026 19:50:29 GMT; -9s from local time.
+| http-headers: 
+|   Date: Fri, 20 Mar 2026 19:50:29 GMT
+|   Server: Apache/2.4.66 (Debian)
+|   Last-Modified: Sun, 02 Nov 2025 22:38:13 GMT
+|   ETag: "30cc-642a4410baebe"
+|   Accept-Ranges: bytes
+|   Content-Length: 12492
+|   Vary: Accept-Encoding
+|   Connection: close
+|   Content-Type: text/html
+|   
+|_  (Request type: GET)
+| http-fileupload-exploiter: 
+|   
+|     Couldn't find a file-type field.
+|   
+|_    Couldn't find a file-type field.
+|_http-chrono: Request times for /; avg: 1189.60ms; min: 288.12ms; max: 3037.52ms
+| http-useragent-tester: 
+|   Allowed User Agents: 
+|     Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+|     GT::WWW
+|     URI::Fetch
+|     http client
+|     Wget/1.13.4 (linux-gnu)
+|   Change in Status Code: 
+|     Python-urllib/2.5: 200
+|     PHPCrawl: 200
+|     Zend_Http_Client: 200
+|     MFC_Tear_Sample: 200
+|     PHP/: 200
+|     HTTP::Lite: 200
+|     WWW-Mechanize/1.34: 200
+|     PECL::HTTP: 200
+|     Snoopy: 200
+|     lwp-trivial: 200
+|     libwww: 200
+|_    libcurl-agent/1.0: 200
+|_http-traceroute: ERROR: Script execution failed (use -d to debug)
+|_http-drupal-enum: Nothing found amongst the top 100 resources,use --script-args number=<number|all> for deeper analysis)
+|_http-mobileversion-checker: No mobile version detected.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=wingdata.htb
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://wingdata.htb:80/
+|     Form id: contact
+|     Form action: 
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Form id: contact
+|_    Form action: 
+|_http-feed: Couldn't find any feeds.
+| http-php-version: Logo query returned unknown hash eb4c6c9b80b2cf7faa5bda9131e32eec
+|_Credits query returned unknown hash eb4c6c9b80b2cf7faa5bda9131e32eec
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-wordpress-users: [Error] Wordpress installation was not found. We couldn't find wp-login.php
+|_http-jsonp-detection: Couldn't find any JSONP endpoints.
+| http-vhosts: 
+| 36 names had status ERROR
+|_92 names had status 301
+|_http-malware-host: Host appears to be clean
+|_http-fetch: Please enter the complete path of the directory to save data in.
+| http-comments-displayer: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=wingdata.htb
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1869
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 23
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2880
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2181
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2019
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 264
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 7
+|     Comment: 
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 15
+|     Comment: 
+|         <!-- Bootstrap core CSS -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 175
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 4494
+|     Comment: 
+|         /* rtl: var(--bs-breadcrumb-divider, "/") */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1688
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 1432
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 13
+|     Comment: 
+|         /* position relative and z-index fix webkit rendering fonts issue */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2887
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 235
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 96
+|     Comment: 
+|         /* No Js */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 22
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1581
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 753
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 349
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 91
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 217
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 388
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 828
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 192
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 200
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2787
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 64
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 60
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 57
+|     Comment: 
+|         <!-- ***** Logo End ***** -->
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 1
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 1165
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 25
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1878
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 334
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 10724
+|     Comment: 
+|         /*# sourceMappingURL=bootstrap.css.map */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 646
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 726
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1373
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/templatemo-custom.js
+|     Line number: 104
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 409
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2641
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3243
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 100
+|     Comment: 
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 685
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 129
+|     Comment: 
+|         /*global define: false, module: false, require: false */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 6
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 354
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1009
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1075
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2802
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 132
+|     Comment: 
+|         <!-- Servicio 1 -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3180
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 17
+|     Comment: 
+|         /* jshint strict: false */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 449
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1834
+|     Comment: 
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 104
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 483
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 204
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1956
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1064
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3152
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1813
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 143
+|     Comment: 
+|         <!-- Servicio 2 -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1292
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/templatemo-custom.js
+|     Line number: 111
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 26
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1779
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 32
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 276
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1713
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 154
+|     Comment: 
+|         <!-- Servicio 3 -->
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 132
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2744
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 120
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2626
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 43
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 7323
+|     Comment: 
+|         /* rtl:end:remove */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1757
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1749
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 481
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3034
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         		});*/
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2987
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 53
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 393
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 231
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1174
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3079
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3115
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 45
+|     Comment: 
+|         <!-- ***** Preloader End ***** -->
+|     
+|     Path: http://wingdata.htb:80/assets/css/animated.css
+|     Line number: 2
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2613
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1223
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 405
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 47
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 99
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 139
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 270
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1156
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3221
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1605
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1022
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 940
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3168
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1899
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 489
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 75
+|     Comment: 
+|         <!-- ***** Header Area End ***** -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 1
+|     Comment: 
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/templatemo-custom.js
+|     Line number: 74
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2489
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 144
+|     Comment: 
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/css/animated.css
+|     Line number: 115
+|     Comment: 
+|         /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 13
+|     Comment: 
+|         /* jshint unused: true, undef: true, strict: true */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1822
+|     Comment: 
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 448
+|     Comment: 
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1786
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 384
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2846
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1239
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 249
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 145
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1408
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 62
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 260
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 91
+|     Comment: 
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 298
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 541
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2958
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 987
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/templatemo-custom.js
+|     Line number: 102
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2893
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 45
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 851
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3053
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2632
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 209
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 194
+|     Comment: 
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 594
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 69
+|     Comment: 
+|         <!-- ***** Menu End ***** -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 17
+|     Comment: 
+|         /* globals define, module, window */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 163
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2273
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         			*/
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 266
+|     Comment: 
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 932
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/templatemo-custom.js
+|     Line number: 120
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 41
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2532
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 5748
+|     Comment: 
+|         /* rtl:end:ignore */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 148
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 250
+|     Comment: 
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 128
+|     Comment: 
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3253
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 228
+|     Comment: 
+|         /* rtl:ignore */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 254
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2647
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/templatemo-custom.js
+|     Line number: 52
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2161
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 101
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1486
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 132
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2859
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3203
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 235
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2250
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 404
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1595
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 816
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 472
+|     Comment: 
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2028
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2752
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1698
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 84
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/templatemo-custom.js
+|     Line number: 109
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 35
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 5824
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         } */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3431
+|     Comment: 
+|         /* jshint -W053 */
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 5737
+|     Comment: 
+|         /* rtl:begin:ignore */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1432
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 178
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 2
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2406
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/js/bootstrap.bundle.min.js
+|     Line number: 1
+|     Comment: 
+|         
+|         
+|         
+|         
+|           */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 119
+|     Comment: 
+|         <!-- SECCI\xC3\x93N DE SERVICIOS - WING DATA SOLUTIONS -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 605
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 122
+|     Comment: 
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 32
+|     Comment: 
+|         /* fix for flashing background */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1302
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 21
+|     Comment: 
+|         /* fix firefox animation glitch */
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 6
+|     Comment: 
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3366
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3266
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 102
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 1076
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 54
+|     Comment: 
+|         /* ---- .grid-item ---- */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 47
+|     Comment: 
+|         <!-- ***** Header Area Start ***** -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 414
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1639
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2393
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1650
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 120
+|     Comment: 
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 126
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 59
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2188
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2152
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1450
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2000
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 888
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1892
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 34
+|     Comment: 
+|         <!-- ***** Preloader Start ***** -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 57
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2447
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 397
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 20
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 165
+|     Comment: 
+|         <!-- Servicio 4 -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1772
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 975
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2109
+|     Comment: 
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 77
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 375
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/vendor/jquery/jquery.min.js
+|     Line number: 1
+|     Comment: 
+|         /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 41
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1323
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 295
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 474
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 327
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 237
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 132
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/css/owl.css
+|     Line number: 1
+|     Comment: 
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2727
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 385
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 154
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 310
+|     Comment: 
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 966
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 624
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/fontawesome.css
+|     Line number: 1
+|     Comment: 
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2480
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 115
+|     Comment: 
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1126
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 58
+|     Comment: 
+|         <!-- ***** Menu Start ***** -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 510
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1849
+|     Comment: 
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 16
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 188
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 47
+|     Comment: 
+|         /* clear fix */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 165
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2866
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 182
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 184
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 1284
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1342
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 552
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1661
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 65
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2836
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 96
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 9
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         --------------------------------------------- */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 416
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 3212
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 19
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1044
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 242
+|     Comment: 
+|         <!-- Scripts -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 59
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 71
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1766
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1282
+|     Comment: 
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 246
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/vendor/bootstrap/css/bootstrap.min.css
+|     Line number: 7317
+|     Comment: 
+|         /* rtl:begin:remove */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2313
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 88
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 108
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 663
+|     Comment: 
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1509
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1525
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1116
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 726
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 263
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1793
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1188
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         	 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 441
+|     Comment: 
+|         
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 29
+|     Comment: 
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2174
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 1417
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 258
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2873
+|     Comment: 
+|         
+|         
+|         
+|         
+|         		 */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 18
+|     Comment: 
+|         <!-- Additional CSS Files -->
+|     
+|     Path: http://wingdata.htb:80/assets/css/templatemo-space-dynamic.css
+|     Line number: 138
+|     Comment: 
+|         
+|         
+|         
+|         
+|         */
+|     
+|     Path: http://wingdata.htb:80/index.html
+|     Line number: 53
+|     Comment: 
+|         <!-- ***** Logo Start ***** -->
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 2602
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|          */
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 98
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/imagesloaded.js
+|     Line number: 456
+|     Comment: 
+|         
+|     
+|     Path: http://wingdata.htb:80/assets/js/owl-carousel.js
+|     Line number: 1541
+|     Comment: 
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|         
+|_        	 */
+|_http-backup-finder: ERROR: Script execution failed (use -d to debug)
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+|_http-errors: Couldn't find any error pages.
+| http-sitemap-generator: 
+|   Directory structure:
+|     /
+|       Other: 1; html: 1
+|     /assets/css/
+|       css: 4
+|     /assets/images/
+|       png: 3
+|     /assets/js/
+|       js: 4
+|     /vendor/bootstrap/css/
+|       css: 1
+|     /vendor/bootstrap/js/
+|       js: 1
+|     /vendor/jquery/
+|       js: 1
+|   Longest directory structure:
+|     Depth: 3
+|     Dir: /vendor/bootstrap/css/
+|   Total files found (by extension):
+|_    Other: 1; css: 5; html: 1; js: 6; png: 3
+Service Info: Host: localhost
+
+Read data files from: /usr/share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Mar 20 20:53:01 2026 -- 1 IP address (1 host up) scanned in 189.70 seconds

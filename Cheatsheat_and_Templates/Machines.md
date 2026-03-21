@@ -18,7 +18,7 @@ curl -s -L -A "Mozilla/5.0" https://www.hackthebox.com/machines | grep -oP '(?<=
 ## Linux
 ### Easy
 - [ ] Academy
-- [ ] Admirer
+- [ ] Admirer 
 - [ ] Alert
 - [ ] Analytics
 - [ ] Antique
@@ -35,7 +35,7 @@ curl -s -L -A "Mozilla/5.0" https://www.hackthebox.com/machines | grep -oP '(?<=
 - [ ] BountyHunter
 - [ ] Broker
 - [ ] Busqueda
-- [ ] CCTV
+- [x] CCTV
 - [x] Cap
 - [ ] Chemistry
 - [ ] Code
@@ -53,7 +53,7 @@ curl -s -L -A "Mozilla/5.0" https://www.hackthebox.com/machines | grep -oP '(?<=
 - [ ] Editor
 - [ ] Editorial
 - [x] Expressway
-- [ ] Facts
+- [x] Facts
 - [ ] Forgotten
 - [ ] FriendZone
 - [ ] Frolic

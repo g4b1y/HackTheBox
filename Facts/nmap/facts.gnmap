@@ -1,0 +1,4 @@
+# Nmap 7.98 scan initiated Sat Mar 21 21:05:41 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -oA nmap/facts -p 22,80,8613,9101,9451,29326,31048,32385,54321 10.129.7.200
+Host: 10.129.7.200 ()	Status: Up
+Host: 10.129.7.200 ()	Ports: 22/open/tcp//ssh//OpenSSH 9.9p1 Ubuntu 3ubuntu3.2 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.26.3 (Ubuntu)/, 8613/closed/tcp//canon-bjnp3///, 9101/closed/tcp//jetdirect///, 9451/closed/tcp/////, 29326/closed/tcp/////, 31048/closed/tcp/////, 32385/closed/tcp/////, 54321/open/tcp//http//Golang net|http server/
+# Nmap done at Sat Mar 21 21:06:11 2026 -- 1 IP address (1 host up) scanned in 30.67 seconds

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Fri Mar 20 16:42:00 2026 as: /usr/lib/nmap/nmap -&#45;privileged -sC -sV -p- -oA ./nmap/wingdata 10.129.7.69 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -sC -sV -p- -oA ./nmap/wingdata 10.129.7.69" start="1774021320" startstr="Fri Mar 20 16:42:00 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.129.7.69" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="SYN Stealth Scan" time="1774021666" percent="89.87" remaining="39" etc="1774021705"/>
+<taskprogress task="SYN Stealth Scan" time="1774021830" percent="90.21" remaining="56" etc="1774021885"/>

@@ -1,0 +1,25 @@
+```bash
+nikto -ask=no -Tuning=x4567890ac -nointeractive -host http://10.129.7.69:80 2>&1 | tee "/home/rf2i/Documents/HTB/Machines/WingData/results/10.129.7.69/scans/tcp80/tcp_80_http_nikto.txt"
+```
+
+[/home/rf2i/Documents/HTB/Machines/WingData/results/10.129.7.69/scans/tcp80/tcp_80_http_nikto.txt](file:///home/rf2i/Documents/HTB/Machines/WingData/results/10.129.7.69/scans/tcp80/tcp_80_http_nikto.txt):
+
+```
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          10.129.7.69
++ Target Hostname:    10.129.7.69
++ Target Port:        80
++ Start Time:         2026-03-20 20:49:53 (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.66 (Debian)
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ Root page / redirects to: http://wingdata.htb/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ 7742 requests: 5 error(s) and 2 item(s) reported on remote host
++ End Time:           2026-03-20 21:08:48 (GMT1) (1135 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+```

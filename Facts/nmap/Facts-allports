@@ -1,0 +1,17 @@
+# Nmap 7.98 scan initiated Sat Mar 21 21:03:17 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Facts-allports 10.129.7.200
+Warning: 10.129.7.200 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.129.7.200
+Host is up (0.080s latency).
+Not shown: 65526 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+8613/tcp  filtered canon-bjnp3
+9101/tcp  filtered jetdirect
+9451/tcp  filtered unknown
+29326/tcp filtered unknown
+31048/tcp filtered unknown
+32385/tcp filtered unknown
+54321/tcp open     unknown
+
+# Nmap done at Sat Mar 21 21:04:02 2026 -- 1 IP address (1 host up) scanned in 45.25 seconds
