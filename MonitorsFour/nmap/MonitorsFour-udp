@@ -1,0 +1,7 @@
+# Nmap 7.98 scan initiated Sun Mar 22 00:57:04 2026 as: /usr/lib/nmap/nmap -sU -Pn -oN nmap/MonitorsFour-udp 10.129.7.210
+Nmap scan report for 10.129.7.210
+Host is up.
+All 1000 scanned ports on 10.129.7.210 are in ignored states.
+Not shown: 1000 open|filtered udp ports (no-response)
+
+# Nmap done at Sun Mar 22 01:00:26 2026 -- 1 IP address (1 host up) scanned in 201.94 seconds
