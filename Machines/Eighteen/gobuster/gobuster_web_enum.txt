@@ -1,0 +1,6 @@
+login               [32m (Status: 200)[0m [Size: 1961]
+register            [32m (Status: 200)[0m [Size: 2421]
+features            [32m (Status: 200)[0m [Size: 2822]
+admin               [36m (Status: 302)[0m [Size: 199][34m [--> /login][0m
+logout              [36m (Status: 302)[0m [Size: 189][34m [--> /][0m
+dashboard           [36m (Status: 302)[0m [Size: 199][34m [--> /login][0m

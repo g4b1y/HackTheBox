@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Sun Mar 29 00:51:05 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Redeemer-allports 10.129.136.187
+Nmap scan report for 10.129.136.187
+Host is up (0.069s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT     STATE SERVICE
+6379/tcp open  redis
+
+# Nmap done at Sun Mar 29 00:51:25 2026 -- 1 IP address (1 host up) scanned in 19.33 seconds

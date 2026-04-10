@@ -1,0 +1,21 @@
+# Nmap 7.98 scan initiated Fri Mar 27 01:32:26 2026 as: /usr/lib/nmap/nmap --privileged -p 1433 --script ms-sql-info,ms-sql-query,ms-sql-dump-hashes --script-args mssql.username=guest,mssql.password= -oN nmap/mssql_advanced_enum 10.129.10.89
+Nmap scan report for eighteen.htb (10.129.10.89)
+Host is up (0.046s latency).
+
+PORT     STATE SERVICE
+1433/tcp open  ms-sql-s
+| ms-sql-query: 
+|_  (Use --script-args=ms-sql-query.query='<QUERY>' to change query.)
+| ms-sql-info: 
+|   10.129.10.89:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2022 RTM
+|       number: 16.00.1000.00
+|       Product: Microsoft SQL Server 2022
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| ms-sql-dump-hashes: 
+|_  10.129.10.89:1433: ERROR: Bad username or password
+
+# Nmap done at Fri Mar 27 01:32:32 2026 -- 1 IP address (1 host up) scanned in 5.57 seconds

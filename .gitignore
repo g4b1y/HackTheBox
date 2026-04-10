@@ -1,3 +1,13 @@
-.vscode/
-*.py
-htb_machines.html
+# Ignore nested git repos
+**/wwwolf-php-webshell/.git
+**/wwwolf-php-webshell/
+
+# Common ignores
+.DS_Store
+*.log
+*.restore
+hydra.restore
+tmp/
+temp/
+node_modules/
+.gemini/

@@ -1,0 +1,14 @@
+# Nmap 7.98 scan initiated Fri Mar 27 01:40:39 2026 as: /usr/lib/nmap/nmap --privileged -p 1433 --script ms-sql-brute --script-args userdb=users.txt,passdb=pass.txt -oN nmap/mssql_brute_results 10.129.10.89
+Nmap scan report for eighteen.htb (10.129.10.89)
+Host is up (0.021s latency).
+
+PORT     STATE SERVICE
+1433/tcp open  ms-sql-s
+| ms-sql-brute: 
+|   10.129.10.89:1433: 
+| [10.129.10.89:1433]
+|   No credentials found
+|   Errors:
+|_    Failed to load usernames list.
+
+# Nmap done at Fri Mar 27 01:40:44 2026 -- 1 IP address (1 host up) scanned in 5.51 seconds

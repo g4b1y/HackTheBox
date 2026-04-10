@@ -1,0 +1,9 @@
+# Nmap 7.98 scan initiated Sun Mar 29 01:30:15 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Mongod-allports 10.129.14.164
+Nmap scan report for 10.129.14.164
+Host is up (0.022s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+27017/tcp open  mongod
+
+# Nmap done at Sun Mar 29 01:30:30 2026 -- 1 IP address (1 host up) scanned in 15.58 seconds

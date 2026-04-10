@@ -1,0 +1,9 @@
+# Nmap 7.98 scan initiated Sun Mar 29 20:39:54 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Crocodile-allports 10.129.1.15
+Nmap scan report for 10.129.1.15
+Host is up (0.021s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+21/tcp open  ftp
+80/tcp open  http
+
+# Nmap done at Sun Mar 29 20:40:05 2026 -- 1 IP address (1 host up) scanned in 11.61 seconds

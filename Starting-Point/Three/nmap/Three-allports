@@ -1,0 +1,9 @@
+# Nmap 7.98 scan initiated Thu Apr  9 12:38:09 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Three-allports 10.129.23.35
+Nmap scan report for 10.129.23.35
+Host is up (0.029s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Thu Apr  9 12:38:26 2026 -- 1 IP address (1 host up) scanned in 17.33 seconds

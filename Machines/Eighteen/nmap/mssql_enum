@@ -1,0 +1,28 @@
+# Nmap 7.98 scan initiated Fri Mar 27 01:16:21 2026 as: /usr/lib/nmap/nmap --privileged -p 1433 --script ms-sql-info,ms-sql-empty-password,ms-sql-ntlm-info -oN nmap/mssql_enum 10.129.10.89
+Nmap scan report for eighteen.htb (10.129.10.89)
+Host is up (0.039s latency).
+
+PORT     STATE SERVICE
+1433/tcp open  ms-sql-s
+| ms-sql-ntlm-info: 
+|   10.129.10.89:1433: 
+|     Target_Name: EIGHTEEN
+|     NetBIOS_Domain_Name: EIGHTEEN
+|     NetBIOS_Computer_Name: DC01
+|     DNS_Domain_Name: eighteen.htb
+|     DNS_Computer_Name: DC01.eighteen.htb
+|     DNS_Tree_Name: eighteen.htb
+|_    Product_Version: 10.0.26100
+| ms-sql-info: 
+|   10.129.10.89:1433: 
+|     Version: 
+|       name: Microsoft SQL Server 2022 RTM
+|       number: 16.00.1000.00
+|       Product: Microsoft SQL Server 2022
+|       Service pack level: RTM
+|       Post-SP patches applied: false
+|_    TCP port: 1433
+| ms-sql-empty-password: 
+|_  10.129.10.89:1433: 
+
+# Nmap done at Fri Mar 27 01:16:27 2026 -- 1 IP address (1 host up) scanned in 5.48 seconds

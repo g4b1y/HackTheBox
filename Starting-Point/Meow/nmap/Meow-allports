@@ -1,0 +1,8 @@
+# Nmap 7.98 scan initiated Sat Mar 28 23:55:52 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Meow-allports 10.129.14.157
+Nmap scan report for 10.129.14.157
+Host is up (0.021s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE
+23/tcp open  telnet
+
+# Nmap done at Sat Mar 28 23:56:02 2026 -- 1 IP address (1 host up) scanned in 10.38 seconds

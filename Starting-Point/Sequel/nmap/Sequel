@@ -1,0 +1,18 @@
+# Nmap 7.98 scan initiated Sun Mar 29 20:27:12 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -oN nmap/Sequel -p 3306 10.129.15.50
+Nmap scan report for sequel.htb (10.129.15.50)
+Host is up (0.021s latency).
+
+PORT     STATE SERVICE VERSION
+3306/tcp open  mysql?
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.5-10.3.27-MariaDB-0+deb10u1
+|   Thread ID: 68
+|   Capabilities flags: 63486
+|   Some Capabilities: Support41Auth, InteractiveClient, SupportsTransactions, IgnoreSigpipes, ODBCClient, Speaks41ProtocolOld, FoundRows, LongColumnFlag, DontAllowDatabaseTableColumn, IgnoreSpaceBeforeParenthesis, SupportsLoadDataLocal, Speaks41ProtocolNew, SupportsCompression, ConnectWithDatabase, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: +gGmod+E[{vabH"n(u9\
+|_  Auth Plugin Name: mysql_native_password
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 29 20:30:32 2026 -- 1 IP address (1 host up) scanned in 199.76 seconds
