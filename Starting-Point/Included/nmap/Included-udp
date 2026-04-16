@@ -1,0 +1,9 @@
+# Nmap 7.99 scan initiated Wed Apr 15 23:38:05 2026 as: /usr/lib/nmap/nmap -sU -oN nmap/Included-udp 10.129.28.14
+Nmap scan report for 10.129.28.14
+Host is up (0.026s latency).
+Not shown: 998 closed udp ports (port-unreach)
+PORT   STATE         SERVICE
+68/udp open|filtered dhcpc
+69/udp open|filtered tftp
+
+# Nmap done at Wed Apr 15 23:55:03 2026 -- 1 IP address (1 host up) scanned in 1018.35 seconds

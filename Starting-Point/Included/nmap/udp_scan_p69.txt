@@ -1,0 +1,8 @@
+# Nmap 7.99 scan initiated Thu Apr 16 00:39:02 2026 as: /usr/lib/nmap/nmap --privileged -sU -p 69 -oN nmap/udp_scan_p69.txt 10.129.28.14
+Nmap scan report for included.htb (10.129.28.14)
+Host is up (0.026s latency).
+
+PORT   STATE         SERVICE
+69/udp open|filtered tftp
+
+# Nmap done at Thu Apr 16 00:39:02 2026 -- 1 IP address (1 host up) scanned in 0.51 seconds

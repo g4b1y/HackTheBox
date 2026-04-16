@@ -1,0 +1,11 @@
+# Nmap 7.99 scan initiated Mon Apr 13 12:29:22 2026 as: /usr/lib/nmap/nmap --privileged -sC -sV -p 80 -oN nmap/Ignition 10.129.1.27
+Nmap scan report for ignition.htb (10.129.1.27)
+Host is up (0.028s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    nginx 1.14.2
+|_http-server-header: nginx/1.14.2
+|_http-title: Home page
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 13 12:29:33 2026 -- 1 IP address (1 host up) scanned in 10.76 seconds

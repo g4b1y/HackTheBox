@@ -1,0 +1,8 @@
+# Nmap 7.99 scan initiated Thu Apr 16 00:34:40 2026 as: /usr/lib/nmap/nmap --privileged -sT -Pn -p- --min-rate 5000 -oN nmap/initial_tcp_scan.txt 10.129.28.14
+Nmap scan report for included.htb (10.129.28.14)
+Host is up (0.060s latency).
+Not shown: 65534 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Thu Apr 16 00:34:49 2026 -- 1 IP address (1 host up) scanned in 8.88 seconds

@@ -1,0 +1,9 @@
+# Nmap 7.99 scan initiated Sun Apr 12 17:52:22 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Funnel-allports 10.129.228.195
+Nmap scan report for 10.129.228.195
+Host is up (0.026s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+
+# Nmap done at Sun Apr 12 17:52:36 2026 -- 1 IP address (1 host up) scanned in 13.43 seconds

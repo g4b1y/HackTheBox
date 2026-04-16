@@ -1,0 +1,9 @@
+# Nmap 7.99 scan initiated Sun Apr 12 18:36:38 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Bike-allports 10.129.97.64
+Nmap scan report for 10.129.97.64
+Host is up (0.043s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Sun Apr 12 18:36:50 2026 -- 1 IP address (1 host up) scanned in 11.19 seconds

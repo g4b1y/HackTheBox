@@ -1,0 +1,8 @@
+# Nmap 7.99 scan initiated Mon Apr 13 12:28:14 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Ignition-allports 10.129.1.27
+Nmap scan report for 10.129.1.27
+Host is up (0.032s latency).
+Not shown: 65534 closed tcp ports (reset)
+PORT   STATE SERVICE
+80/tcp open  http
+
+# Nmap done at Mon Apr 13 12:28:25 2026 -- 1 IP address (1 host up) scanned in 10.76 seconds

@@ -1,0 +1,9 @@
+# Nmap 7.99 scan initiated Tue Apr 14 12:11:44 2026 as: /usr/lib/nmap/nmap --privileged -p- --min-rate=5000 -oN nmap/Oopsie-allports 10.129.26.226
+Nmap scan report for 10.129.26.226
+Host is up (0.086s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Tue Apr 14 12:12:13 2026 -- 1 IP address (1 host up) scanned in 28.97 seconds

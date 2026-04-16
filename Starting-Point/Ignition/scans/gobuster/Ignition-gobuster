@@ -1,0 +1,12 @@
+contact             [32m (Status: 200)[0m [Size: 28673]
+home                [32m (Status: 200)[0m [Size: 25802]
+media               [36m (Status: 301)[0m [Size: 185][34m [--> http://ignition.htb/media/][0m
+0                   [32m (Status: 200)[0m [Size: 25803]
+catalog             [36m (Status: 302)[0m [Size: 0][34m [--> http://ignition.htb/][0m
+static              [36m (Status: 301)[0m [Size: 185][34m [--> http://ignition.htb/static/][0m
+admin               [32m (Status: 200)[0m [Size: 7095]
+Home                [36m (Status: 301)[0m [Size: 0][34m [--> http://ignition.htb/home][0m
+cms                 [32m (Status: 200)[0m [Size: 25817]
+checkout            [36m (Status: 302)[0m [Size: 0][34m [--> http://ignition.htb/checkout/cart/][0m
+robots              [32m (Status: 200)[0m [Size: 1]
+setup               [36m (Status: 301)[0m [Size: 185][34m [--> http://ignition.htb/setup/][0m

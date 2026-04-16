@@ -11,3 +11,5 @@ tmp/
 temp/
 node_modules/
 .gemini/
+**/winPEASany.exe
+**/nc64.exe
